@@ -49,7 +49,7 @@ class App extends Component {
     const { isUser, authForms } = this.state;
     return (
       <div className="container margin">
-        {/* {!isUser ? (
+        {!isUser ? (
           authForms ? (
             <div>
               <SignUp toggleToSignIn={this.toggleAuthForms} />
@@ -79,8 +79,8 @@ class App extends Component {
             <button className="btn btn-danger pull-right" onClick={this.logout}>Logout <i className="fa fa-sign-out"></i></button>
             <QuizList />
           </div>
-        )} */}
-        <QuizList />
+        )}
+        {/* <QuizList /> */}
       </div>
     );
   }
